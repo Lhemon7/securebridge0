@@ -6,6 +6,19 @@
 <title>EscrowGuard – Secure Multi-Sig Escrow Solutions</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+ html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* This ensures the background color stretches even if content overflows */
+    min-width: 100%; 
+    background-color: #002147; /* Use your specific Navy Blue hex code here */
+}
+
+.main-container, .contact-form-wrap {
+    max-width: 100vw; /* Prevents the box from being wider than the screen */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  @media (max-width: 768px) {
     .contact-form-wrap {
