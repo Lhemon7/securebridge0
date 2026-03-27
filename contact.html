@@ -7,7 +7,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+   @media (max-width: 768px) {
+    .contact-form-wrap {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+    }
 
+    /* Force the Name and Email to stack vertically instead of side-by-side */
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0; 
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Set font-size to 16px to prevent iOS from auto-zooming on click */
+    input, select, textarea {
+        width: 100%;
+        font-size: 16px !important; 
+        padding: 12px !important;
+        box-sizing: border-box; /* Ensures padding doesn't break width */
+    }
+
+    .btn-gold {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
   :root {
     --navy: #0d1b3e;
     --navy-mid: #162347;
